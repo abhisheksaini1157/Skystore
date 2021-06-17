@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <metaname name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>SkyStore | Women-wear </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="140px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+           <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+         <section class="hero women">
+            <div class="mentext">
+                <h1>Women Wear<br>Exclusive Discounts</h1>
+                <p>UPTO 50% OFF</p>
+            <a href="" class="btn">VIEW COLLECTION &#8594;</a>
+            </div>
+            <div class="womenherocontainer"> </div>
+         </section> 
+       
+
+<!-- catagories -->
+<div class="menwear-cata">
+    <div class="row">
+    <div class="col-4">
+        <img src="images/KURTAS.JPG"> 
+        <div class="col4txt">KURTAS</div>
+        
+    </div>
+    <div class="col-4">
+        <img src="images/SARRES.JPG">
+       <div class="col4txt">SAREES</div> 
+        
+    </div>
+    <div class="col-4">
+        <img src="images/DRESSES.JPG">
+        <div class="col4txt">DRESSES</div>
+        
+    </div>
+    <div class="col-4">
+        <img src="images/JACKETS.JPG">
+        <div class="col4txt">JACKETS</div>
+        
+    </div>
+    </div>
+</div>
+
+<!-- top brands -->
+<h2 class="title">Top Brands</h2>
+<div class="menwear-cata">
+<div class="row">
+    <div class="col-4">
+        <img src="images/womenwear-brand1.jpg"> 
+        
+        
+    </div>
+    <div class="col-4">
+        <img src="images/womenwear-brand2.jpg">
+      
+        
+    </div>
+    <div class="col-4">
+        <img src="images/womenwear-brand3.jpg">
+       
+        
+    </div>
+    </div>
+</div>
+
+<!-- trends of season -->
+<h2 class="title">Trends of  the Season</h2>
+<div class="menwear-cata">
+<div class="row">
+    <div class="col-4">
+        <img src="images/womentrend1.jpg"> 
+        
+        
+    </div>
+    <div class="col-4">
+        <img src="images/womentrend2.jpg">
+      
+        
+    </div>
+    <div class="col-4">
+        <img src="images/womentrend3.jpg">
+       
+        
+    </div>
+    <div class="col-4">
+        <img src="images/womentrend4.jpg">
+       
+        
+    </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Stay home and shop online.You are too pretty to have a look for a parking spot.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return Policy</li>
+                   <li>Join Affilate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Abhishek Saini</p>
+    </div>
+</div>
+
+<!-- javascript for toggle menu -->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px"
+    function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+
+    }
+</script>
+    </body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <metaname name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>shirts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+       
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="140px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+           <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      
+    
+</div>
+
+
+
+
+<div class="small-container">
+<div class=" row row-2">
+    <h2>Shirts</h2>
+    <select>
+        <option>Default Sorting </option>
+        <option>Sort by Price </option>
+        <option>Sort by Popularity </option>
+        <option>Sort by Rating</option>
+        <option>Sort by Sale </option>
+    </select>
+</div>
+<div class="row">
+    <div class="col-4">
+        <img src="images/shirt1.jpg">
+        <h4>Red Printed T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt2.jpg">
+        <h4>Black Sports Shoes</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt3.jpg">
+        <h4>Black color lower</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt4.jpg">
+        <h4>Blue T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+</div>
+
+ 
+
+<div class="row">
+    <div class="col-4">
+        <img src="images/shirt5.jpg">
+        <h4>Red Printed T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt6.jpg">
+        <h4>Black Sports Shoes</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt7.jpg">
+        <h4>Black color lower</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt8.jpg">
+        <h4>Blue T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <img src="images/shirt9.jpg">
+        <h4>Red Printed T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt10.jpg">
+        <h4>Black Sports Shoes</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt11.jpg">
+        <h4>Black color lower</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/shirt12.jpg">
+        <h4>Blue T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+</div>
+
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594;</span>
+</div>
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Stay home and shop online.You are too pretty to have a look for a parking spot.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return Policy</li>
+                   <li>Join Affilate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Abhishek Saini</p>
+    </div>
+</div>
+
+<!-- javascript for toggle menu -->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px"
+    function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+
+    }
+</script>
+    </body>
+
+</html>

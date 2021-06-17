@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <metaname name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>SkyStore | Product Details</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+       
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="140px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+           <a href="cart.html" ><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+</div>
+
+<!-- single productdetails -->
+<div class="small-container single-product">
+    <div class="row">
+       <div class="col-2">
+           <img src="images/gallery-1.jpg" width="100%" id="productImg">
+           <div class="small-img-row">
+               <div class="small-img-col">
+                   <img src="images/gallery-1.jpg" width="100%" class="small-img">
+               </div>
+               <div class="small-img-col">
+                <img src="images/gallery-2.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="images/gallery-3.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="images/gallery-4.jpg" width="100%" class="small-img">
+            </div>
+           </div>
+
+       </div>
+       <div class="col-2">
+           <p>Home / T-Shirt</p>
+           <h1>Red Printed T-Shirt by HRX</h1>
+           <h4>$50.00</h4>
+           <select>
+               <option> Select Size </option>
+               <option> XXL </option>
+               <option> XL </option>
+               <option> Large </option>
+               <option> Medium </option>
+               <option> Small </option>
+           </select>
+           <input type="number" value="1">
+           <a href="" class="btn">Add to Cart</a>
+           <h3>Product Details</h3>
+           <p>Give your summer ardrobe a style upgrade with the HRX men's Active T-shirt.Team it with a pair of shorts for your morning workout</p>
+       </div>
+    </div>
+</div>
+
+<!-- title -->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Product</h2>
+        <p>View more</p>
+    </div>
+</div>
+
+<div class="small-container">
+
+<div class="row">
+    <div class="col-4">
+        <img src="images/product-12.jpg">
+        <h4>Black Lower</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/product-2.jpg">
+        <h4>Black Sports Shoes</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/product-3.jpg">
+        <h4>Black color lower</h4>
+        <p>$50.00</p>
+    </div>
+    <div class="col-4">
+        <img src="images/product-4.jpg">
+        <h4>Blue T-shirt</h4>
+        <p>$50.00</p>
+    </div>
+</div>
+</div>
+
+ 
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Stay home and shop online.You are too pretty to have a look for a parking spot.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return Policy</li>
+                   <li>Join Affilate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Abhishek Saini</p>
+    </div>
+</div>
+
+<!-- javascript for toggle menu -->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px"
+    function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+
+    }
+</script>
+<!-- 
+java script for product gallary -->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+    smallImg[0].onclick = function(){
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function(){
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function(){
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function(){
+        productImg.src = smallImg[3].src;
+    }
+</script>
+    </body>
+
+</html>
